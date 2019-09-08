@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 19-Oct-2018, 20:23:16
+    Author     : Ivana
+*/
+
+
+*{
+    -fx-primary: #8c769f;
+    -fx-secondary:	#7a5c8d;
+    -fx-primarytext:#f5f5f5;
+    -fx-btnBorder:#5a3972;
+
+}
+
+.root{
+    -fx-background-color: -fx-primary;
+    -fx-opacity: 0.9;
+    -fx-background-radius: 10px;
+
+
+}
+
+.label{
+    -fx-text-fill: -fx-primarytext;
+}
+
+#btnLogin{
+    /*    -fx-border-color:-fx-secondary;*/
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-text-alignment: center;
+    -fx-font-weight: bold;
+    -fx-background-color: #5a3972;
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size:14px;
+}
+
+#btnLogin:hover{
+    -fx-border-color:-fx-btnBorder;
+    -fx-background-color:  -fx-secondary;
+    -fx-border-width: 2.4px;
+
+
+
+
+}
+
+/*-text-field{
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-size:13pt;
+    -fx-focus-color:-fx-secondary;
+     -fx-border-radius:10px;
+}*/
+
+.text-field{
+    -fx-background-color:-fx-btnBorder;
+    -fx-border-color:transparent;
+    -fx-border-radius:10px;
+    -fx-font-size:14px;
+    -fx-padding:5;
+    -fx-text-fill:-fx-primarytext;
+    -fx-background-radius: 10,10,10,10;
+}
+
+.text-field:focused{
+    -fx-background-color:-fx-secondary;
+    -fx-border-color:-fx-primarytext;
+    -fx-text-fill:-fx-primarytext;
+    -fx-background-radius: 10,10,10,10;
+
+
+
+}

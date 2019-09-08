@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1160.0" stylesheets="@../resources/css/table_textField.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ivanakasalo.gui.InvoiceManagementController">
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" styleClass="root" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tblCategory" layoutX="65.0" layoutY="20.0" onMouseClicked="#getSelectedInvoice" prefHeight="742.0" prefWidth="1057.0">
+                    <columns>
+                      <TableColumn fx:id="colinvoiceNo" prefWidth="150.0" text="InvoiceNo" />
+                        <TableColumn fx:id="colClient" prefWidth="150.0" text="Client" />
+                        <TableColumn fx:id="colUser" prefWidth="150.0" text="Operator Code" />
+                        <TableColumn fx:id="colInvoiceDate" prefWidth="150.0" text="Invoice Date" />
+                        <TableColumn fx:id="colSum" prefWidth="150.0" text="Sum" />
+                        <TableColumn fx:id="colFrom" prefWidth="150.0" text="From" />
+                        <TableColumn fx:id="colTo" prefWidth="150.0" text="To" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

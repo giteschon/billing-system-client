@@ -1,0 +1,39 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+*{
+    -fx-navBgColor:#2c0f48;
+    -fx-navHoverColor:#452862;
+    /*    -fx-navHoverColor:	#7a5c8d;*/
+    -fx-textColor:#d8d0de;
+    -fx-btnClickedSide:#5a3972;
+
+}
+
+.mainFxmlClass {
+    -fx-background-color: -fx-navBgColor;
+
+}
+
+.vbox{
+    -fx-background-color: -fx-navBgColor;
+}
+
+
+#btnNav:hover{
+    -fx-background-color: -fx-navHoverColor;
+}
+
+.label{
+    -fx-background-color: transparent;
+}
+
+#btnNav .label:hover{
+    -fx-background-color: transparent;
+}
+.label{
+    -fx-text-fill: -fx-textColor;
+}
+
+

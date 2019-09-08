@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<invoice>
+<invoiceNo>110/1/2018</invoiceNo>
+<invoiceDate>2019-01-08</invoiceDate>
+<invoiceSum>35.0</invoiceSum>
+<currency>EUR</currency>
+<vat>25%</vat>
+<client>
+<clientName>Algebra</clientName>
+<address>Ilica 264</address>
+<postCode>10000</postCode>
+<city>Zagreb</city>
+<oib>1111</oib>
+</client>
+<items>
+<accounting>25.0</accounting>
+<disbursements>3.0</disbursements>
+</items>
+<specification>
+<log0>
+<task>post administration</task>
+<time>15</time>
+</log0>
+</specification>
+</invoice>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="768.0" prefWidth="1160.0" stylesheets="@../resources/css/table_textField.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ivanakasalo.gui.DashboardController">
+   <center>
+      <Button mnemonicParsing="false" onAction="#btnSerialisedDataOnAction" text="Read serialised invoices data" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <Button mnemonicParsing="false" onAction="#btnGenerateHtmlOnAction" text="Generate Html - Reflection" BorderPane.alignment="CENTER" />
+   </left>
+   <bottom>
+      <ListView fx:id="lwHistory" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

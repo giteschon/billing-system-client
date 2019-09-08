@@ -1,0 +1,14 @@
+#This file is used by the JNDI FSContext.
+#Tue Jan 08 01:26:57 CET 2019
+screen/ClassName=com.ivanakasalo.jndi.Resources
+width/ClassName=com.ivanakasalo.jndi.Resources
+width/RefAddr/0/Type=w
+height/RefAddr/0/Content=800.0
+screen/RefAddr/0/Content=50.0
+width/RefAddr/0/Encoding=String
+height/RefAddr/0/Type=h
+screen/RefAddr/0/Type=w
+height/ClassName=com.ivanakasalo.jndi.Resources
+screen/RefAddr/0/Encoding=String
+height/RefAddr/0/Encoding=String
+width/RefAddr/0/Content=1280.0

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bpaneMaster" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1360.0" stylesheets="@../resources/css/master.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ivanakasalo.gui.MasterController">
+   <left>
+      <BorderPane styleClass="vbox" BorderPane.alignment="CENTER">
+         <center>
+            <VBox fx:id="navContainer" prefHeight="713.0" prefWidth="210.0" styleClass="vbox">
+               <children>
+                  <Pane prefHeight="167.0" prefWidth="190.0">
+                     <children>
+                        <Label fx:id="lblUser" alignment="TOP_LEFT" layoutX="24.0" layoutY="104.0" prefHeight="60.0" prefWidth="176.0" text="Pero" textAlignment="CENTER" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="65.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../resources/icons/white/icons8_Male_User_50px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <Pane id="btnNav" fx:id="btnDashboard" onMouseClicked="#btnDashboardMouseClicked" prefHeight="50.0" prefWidth="190.0">
+                     <children>
+                        <Pane fx:id="pnlSide0" prefHeight="50.0" prefWidth="11.0" />
+                        <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="11.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" x="5.0" y="5.0">
+                           <image>
+                              <Image url="@../resources/icons/white/icons8_Home_50px.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="68.0" layoutY="11.0" text="Dashboard" textAlignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane id="btnNav" fx:id="btnUser" onMouseClicked="#btnUserMouseClicked" prefHeight="50.0" prefWidth="190.0">
+                     <children>
+                        <Pane fx:id="pnlSide1" prefHeight="50.0" prefWidth="11.0" />
+                        <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="11.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" x="5.0" y="5.0">
+                           <image>
+                              <Image url="@../resources/icons/white/icons8_User_50px.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="68.0" layoutY="11.0" text="Users" textAlignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane id="btnNav" fx:id="btnClient" onMouseClicked="#btnClientMouseClicked" prefHeight="50.0" prefWidth="190.0">
+                     <children>
+                        <Pane fx:id="pnlSide2" prefHeight="50.0" prefWidth="11.0" />
+                        <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="11.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" x="7.0" y="5.0">
+                           <image>
+                              <Image url="@../resources/icons/white/icons8_User_Groups_50px.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="68.0" layoutY="11.0" text="Clients" textAlignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane id="btnNav" fx:id="btnTimeLog" onMouseClicked="#btnTimeLogMouseClicked" prefHeight="50.0" prefWidth="190.0">
+                     <children>
+                        <Pane fx:id="pnlSide3" prefHeight="50.0" prefWidth="11.0" />
+                        <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="11.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" x="5.0" y="5.0">
+                           <image>
+                              <Image url="@../resources/icons/white/icons8_Time_Management_50px.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="68.0" layoutY="11.0" text="Time Log" textAlignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane id="btnNav" fx:id="btnInvoice" onMouseClicked="#btnInvoiceMouseClicked" prefHeight="50.0" prefWidth="190.0">
+                     <children>
+                        <Pane fx:id="pnlSide4" prefHeight="50.0" prefWidth="11.0" />
+                        <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="11.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" x="5.0" y="5.0">
+                           <image>
+                              <Image url="@../resources/icons/white/icons8_New_Copy_52px.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="68.0" layoutY="11.0" text="New invoice" textAlignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </Pane>
+                  <Pane id="btnNav" fx:id="btnInvoiceManagement" onMouseClicked="#btnInvoiceManagementMouseClicked" prefHeight="50.0" prefWidth="190.0">
+                     <children>
+                        <Pane fx:id="pnlSide5" prefHeight="50.0" prefWidth="11.0" />
+                        <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="11.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" x="5.0" y="5.0">
+                           <image>
+                              <Image url="@../resources/icons/white/icons8_Order_History_50px_1.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="68.0" layoutY="11.0" text="Invoice history" textAlignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane id="btnNav" fx:id="btnCategory" onMouseClicked="#btnCategoryMouseClicked" prefHeight="50.0" prefWidth="190.0">
+                     <children>
+                        <Pane fx:id="pnlSide6" prefHeight="50.0" prefWidth="11.0" />
+                        <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="11.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" x="7.0" y="5.0">
+                           <image>
+                              <Image url="@../resources/icons/white/icons8_Categorize_50px.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="68.0" layoutY="11.0" text="Categories" textAlignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane id="btnNav" fx:id="btnTask" onMouseClicked="#btnTaskMouseClicked" prefHeight="50.0" prefWidth="190.0">
+                     <children>
+                        <Pane fx:id="pnlSide7" prefHeight="50.0" prefWidth="11.0" />
+                        <ImageView fitHeight="45.0" fitWidth="50.0" layoutX="11.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" x="5.0" y="5.0">
+                           <image>
+                              <Image url="@../resources/icons/white/icons8_Todo_List_64px.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="CENTER" layoutX="68.0" layoutY="11.0" text="Tasks" textAlignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="5.0" right="5.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </center>
+         <top>
+            <Label fx:id="lblTime" text="Time" BorderPane.alignment="CENTER" />
+         </top>
+         <bottom>
+            <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <BorderPane prefHeight="200.0" prefWidth="200.0">
+                     <bottom>
+                        <HBox prefHeight="45.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                           <children>
+                              <ImageView fitHeight="45.0" fitWidth="40.0" onMouseClicked="#btnChatOnMouseClicked" pickOnBounds="true" preserveRatio="true" x="5.0" y="5.0">
+                                 <image>
+                                    <Image url="@../resources/icons/white/icons8_Chat_Bubble_50px.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <TextField fx:id="txtMessage" onKeyPressed="#sendMessageOnKeyPressed" promptText="Message...">
+                                 <HBox.margin>
+                                    <Insets left="7.0" top="7.0" />
+                                 </HBox.margin>
+                              </TextField>
+                           </children>
+                        </HBox>
+                     </bottom>
+                     <center>
+                        <TextArea fx:id="txtChatArea" editable="false" prefHeight="200.0" prefWidth="200.0" promptText="Chat area..." BorderPane.alignment="CENTER" />
+                     </center>
+                  </BorderPane>
+               </children>
+            </VBox>
+         </bottom>
+      </BorderPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="contentContainer" onMouseClicked="#btnChatOnMouseClicked" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

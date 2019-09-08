@@ -1,0 +1,173 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21-Oct-2018, 11:42:34
+    Author     : Ivana
+*/
+
+
+*{
+    /*    -fx-bgColor:#2c0f48;
+        -fx-navHoverColor:#452862;
+        -fx-navHoverColor:	#7a5c8d;
+    -fx-darkTextColor:#d8d0de;
+     
+    
+     -fx-text:	#2c0f48;*/
+    -fx-text:	#2c0f48;
+    -fx-button-bg:#5a3972;
+    -fx-hover-color:#7a5c8d;
+    -fx-btnTextColor:#d8d0de;
+    -fx-bg-color:	#F4F4F4;
+    -fx-lightTextColor:#f5f5f5;
+    -fx-tabColor:#5a3972;
+}
+
+/*remove scroll bar default color*/
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.scroll-pane .label{
+    -fx-text-fill: black;
+}
+
+.root{
+    -fx-background-color:-fx-bg-color;
+}
+
+#navMenu{
+
+    -fx-background-color:-fx-hover-color;
+
+
+}
+
+#navMenu .label{
+    -fx-text-fill: -fx-lightTextColor;
+}
+
+/*tab pane css*/
+
+/*change default caspian.css, blue outline of selected tab*/
+.tab-pane:focused > .tab-header-area > .headers-region > .tab:selected .focus-indicator {
+    /*     -fx-border-style: segments(0.166667em, 0.166667em);
+         -fx-border-width: 1;*/
+    -fx-border-color: transparent;
+}
+
+.tab{
+    -fx-background-color:-fx-bg-color;
+    -fx-pref-width:350px;
+    -fx-pref-height:30px;
+
+}
+
+.tab .tab-label { 
+    -fx-alignment: CENTER;
+    -fx-text-fill: -fx-lightTextColor;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.tab-pane .tab-header-background{
+    -fx-background-color:-fx-hover-color;  
+}
+
+/*.tab-pane  .tab-header-area  .tab-selected-line{
+     -fx-stroke: red;}*/
+.tab-pane .tab
+{
+    -fx-background-color: -fx-hover-color;
+
+}
+
+.tab-pane .tab:selected
+{
+    -fx-border-color: -fx-tabColor;
+    -fx-border-width:0 0 5 0;
+
+}
+
+/*.tab-selected-line {
+ -fx-stroke: red;
+ -fx-stroke-width: 25px;
+
+ }*/
+
+.tab-pane{
+    -fx-background-color:-fx-bg-color;
+}
+
+/*scroll bar*/
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: -fx-hover-color;
+    -fx-background-radius: 5em;
+}
+.scroll-pane > .corner {
+    -fx-background-color: transparent;
+}
+
+
+.combo-box{
+    -fx-background-color:-fx-button-bg;
+    -fx-background:-fx-btnTextColor;
+    -fx-background-radius: 5, 5, 5, 5;
+    -fx-font-size:14px;
+}
+
+.combo-box-popup .list-view 
+{
+    -fx-background-color: -fx-btnTextColor;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 5, 0, 5, 0;
+}
+
+.combo-box-base:hover
+{
+    -fx-color: -fx-bg-color;
+}
+
+.combo-box .list-cell:selected{
+    -fx-text-fill: -fx-btnTextColor
+}
+
+.button{
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-text-alignment: center;
+    -fx-font-weight: bold;
+    -fx-background-color: -fx-button-bg;
+    -fx-text-fill: -fx-btnTextColor;
+    -fx-font-size:14px;
+    -fx-padding:5;
+}
+
+.button:hover{
+    -fx-border-color:-fx-button-bg;
+    -fx-background-color:  -fx-hover-color;
+    -fx-border-width: 2.4px;
+}

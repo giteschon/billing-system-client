@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1160.0" stylesheets="@../resources/css/table_textField.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ivanakasalo.gui.ClientController">
+   <left>
+      <VBox prefHeight="768.0" prefWidth="216.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label id="lblHeader" alignment="CENTER" prefHeight="17.0" prefWidth="218.0" text="Add new client">
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin></Label>
+            <Label layoutX="10.0" layoutY="10.0" text="Name:">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtName">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </VBox.margin></TextField>
+            <Label layoutX="10.0" layoutY="27.0" text="Address:">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtAddress" layoutX="10.0" layoutY="44.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Label layoutX="10.0" layoutY="111.0" text="City">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <ComboBox fx:id="cbCity" prefHeight="30.0" prefWidth="193.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </VBox.margin></ComboBox>
+            <Label layoutX="10.0" layoutY="153.0" text="OIB:">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtOib" accessibleRole="PASSWORD_FIELD" layoutX="20.0" layoutY="240.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Label layoutX="20.0" layoutY="270.0" text="MBS:">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtMbs" accessibleRole="PASSWORD_FIELD" layoutX="10.0" layoutY="287.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Label layoutX="20.0" layoutY="270.0" text="MB:">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="txtMb" accessibleRole="PASSWORD_FIELD" layoutX="10.0" layoutY="287.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Fee">
+               <VBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </VBox.margin></Label>
+            <ComboBox fx:id="cbFee" prefHeight="30.0" prefWidth="195.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </VBox.margin></ComboBox>
+            <Label text="Price">
+               <VBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </VBox.margin></Label>
+            <TextField fx:id="txtPrice">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="5.0" />
+               </VBox.margin></TextField>
+            <Button mnemonicParsing="false" onMouseClicked="#btnAddMouseClicked" prefHeight="25.0" prefWidth="196.0" text="Add:">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="35.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="btnEdit" disable="true" mnemonicParsing="false" onMouseClicked="#btnEditMouseClicked" prefHeight="25.0" prefWidth="199.0" text="Edit">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="tblClients" layoutX="86.0" layoutY="35.0" onMouseClicked="#getSelectedRow" prefHeight="200.0" prefWidth="852.0">
+                    <columns>
+                      <TableColumn fx:id="colName" prefWidth="105.0" text="Name" />
+                      <TableColumn fx:id="colAddress" prefWidth="105.0" text="Address" />
+                        <TableColumn fx:id="colPostalCode" prefWidth="105.0" text="Postal code" />
+                        <TableColumn fx:id="colCity" prefWidth="105.0" text="City" />
+                        <TableColumn fx:id="colOib" prefWidth="105.0" text="OIB" />
+                        <TableColumn fx:id="colMbs" prefWidth="105.0" text="MBS" />
+                        <TableColumn fx:id="colMb" prefWidth="105.0" text="MB" />
+                        <TableColumn fx:id="colFee" prefWidth="105.0" text="Fee" />
+                        <TableColumn fx:id="colPrice" prefWidth="105.0" text="Price" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+   </center>
+</BorderPane>
